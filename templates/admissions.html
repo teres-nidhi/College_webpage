@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Admissions | {{ site_data.college.name }}{% endblock %}
+
+{% block content %}
+<section class="page-hero narrow-hero">
+  <div class="container page-hero-content">
+    <p class="eyebrow dark">Admissions</p>
+    <h1>Join a campus shaped for ambition, excellence, and opportunity.</h1>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container split-layout">
+    <div>
+      <p class="lead-text">We invite students who are curious, motivated, and ready to transform their future through learning and leadership.</p>
+      <p>Applications are open for undergraduate, postgraduate, and research programs across engineering, management, and technology disciplines.</p>
+      <div class="cta-inline">
+        <a href="mailto:{{ site_data.college.email }}" class="btn btn-primary">Request information</a>
+      </div>
+    </div>
+    <div class="info-panel">
+      <h3>Admission highlights</h3>
+      <ul>
+        <li>Transparent selection process</li>
+        <li>Scholarship and merit support</li>
+        <li>Career counselling and counseling sessions</li>
+        <li>Experienced admission support team</li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

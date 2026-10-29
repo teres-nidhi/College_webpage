@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block title %}Admin | {{ site_data.college.name }}{% endblock %}
+
+{% block content %}
+<section class="page-hero narrow-hero admin-hero">
+  <div class="container page-hero-content">
+    <p class="eyebrow dark">Website admin</p>
+    <h1>Update college information</h1>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container admin-wrap">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash-message">
+          {% for message in messages %}
+            <p>{{ message }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <form method="post" class="admin-form">
+      <div class="admin-grid">
+        <label>
+          College name
+          <input type="text" name="college_name" value="{{ site_data.college.name }}" />
+        </label>
+        <label>
+          Short name
+          <input type="text" name="college_short_name" value="{{ site_data.college.short_name }}" />
+        </label>
+        <label>
+          Location
+          <input type="text" name="college_location" value="{{ site_data.college.location }}" />
+        </label>
+        <label>
+          Hero badge
+          <input type="text" name="college_hero_badge" value="{{ site_data.college.hero_badge }}" />
+        </label>
+        <label class="full-width">
+          Tagline
+          <input type="text" name="college_tagline" value="{{ site_data.college.tagline }}" />
+        </label>
+        <label class="full-width">
+          Hero text
+          <textarea rows="3" name="college_hero_text">{{ site_data.college.hero_text }}</textarea>
+        </label>
+        <label class="full-width">
+          About text
+          <textarea rows="4" name="college_about">{{ site_data.college.about }}</textarea>
+        </label>
+        <label class="full-width">
+          Address
+          <input type="text" name="college_address" value="{{ site_data.college.address }}" />
+        </label>
+        <label>
+          Phone
+          <input type="text" name="college_phone" value="{{ site_data.college.phone }}" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="college_email" value="{{ site_data.college.email }}" />
+        </label>
+
+        <label>
+          Stat 1 value
+          <input type="text" name="stat1_value" value="{{ site_data.stats[0].value }}" />
+        </label>
+        <label>
+          Stat 1 label
+          <input type="text" name="stat1_label" value="{{ site_data.stats[0].label }}" />
+        </label>
+        <label>
+          Stat 2 value
+          <input type="text" name="stat2_value" value="{{ site_data.stats[1].value }}" />
+        </label>
+        <label>
+          Stat 2 label
+          <input type="text" name="stat2_label" value="{{ site_data.stats[1].label }}" />
+        </label>
+        <label>
+          Stat 3 value
+          <input type="text" name="stat3_value" value="{{ site_data.stats[2].value }}" />
+        </label>
+        <label>
+          Stat 3 label
+          <input type="text" name="stat3_label" value="{{ site_data.stats[2].label }}" />
+        </label>
+        <label class="full-width">
+          Admissions section title
+          <input type="text" name="admissions_title" value="{{ site_data.admissions.title }}" />
+        </label>
+      </div>
+
+      <div class="admin-actions">
+        <button type="submit" class="btn btn-primary">Save changes</button>
+      </div>
+    </form>
+  </div>
+</section>
+{% endblock %}

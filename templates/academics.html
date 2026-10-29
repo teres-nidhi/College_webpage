@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Academics | {{ site_data.college.name }}{% endblock %}
+
+{% block content %}
+<section class="page-hero narrow-hero">
+  <div class="container page-hero-content">
+    <p class="eyebrow dark">Academics</p>
+    <h1>Rigorous programs built for real-world careers and research.</h1>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <div class="program-grid large-grid">
+      {% for program in site_data.programs %}
+      <article class="program-card">
+        <div class="program-tag">{{ program.type }}</div>
+        <h3>{{ program.title }}</h3>
+        <p>{{ program.description }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt-bg">
+  <div class="container split-layout stack-mobile">
+    <div class="info-panel no-shadow">
+      <h3>Academic approach</h3>
+      <ul>
+        <li>Outcome-based learning and continuous assessment</li>
+        <li>Research-focused labs and interdisciplinary projects</li>
+        <li>Industry mentorship, internships, and innovation clubs</li>
+        <li>Strong emphasis on ethics, communication, and leadership</li>
+      </ul>
+    </div>
+    <div>
+      <p class="lead-text">Our pedagogy is designed to create professionals who can contribute to technology, society, and business with clarity and confidence.</p>
+      <p>With a balanced mix of theory, lab work, and experience-based learning, students are encouraged to explore, question, and lead from the classroom to the workplace.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

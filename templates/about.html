@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}About | {{ site_data.college.name }}{% endblock %}
+
+{% block content %}
+<section class="page-hero narrow-hero">
+  <div class="container page-hero-content">
+    <p class="eyebrow dark">About us</p>
+    <h1>Building a culture of learning, leadership, and impact.</h1>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container split-layout">
+    <div>
+      <p class="lead-text">{{ site_data.college.about }}</p>
+      <p>
+        BMSIT&M is focused on empowering students through meaningful academic depth, experiential learning, and strong values-based mentorship. Our curriculum blends traditional strengths with modern industry expectations to create confident, capable graduates.
+      </p>
+    </div>
+    <div class="info-panel">
+      <h3>Our strengths</h3>
+      <ul>
+        <li>Student-centric teaching and mentoring</li>
+        <li>Research-driven innovation culture</li>
+        <li>Strong placement and internship ecosystem</li>
+        <li>On-campus leadership and extracurricular growth</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt-bg">
+  <div class="container">
+    <div class="section-heading left-align">
+      <p class="eyebrow dark">Why choose us</p>
+      <h2>Excellent outcomes with a human-centered approach.</h2>
+    </div>
+    <div class="feature-list three-col">
+      {% for highlight in site_data.highlights %}
+      <div>
+        <h3>{{ highlight.title }}</h3>
+        <p>{{ highlight.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

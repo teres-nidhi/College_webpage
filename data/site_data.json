@@ -1,0 +1,51 @@
+{
+  "college": {
+    "name": "BMS Institute of Technology & Management",
+    "short_name": "BMSIT&M",
+    "location": "Bengaluru",
+    "tagline": "Shaping future-ready leaders for a changing world.",
+    "hero_text": "BMS Institute of Technology & Management empowers students with industry-relevant learning, global outlook, and innovation-led experiences across engineering, technology, and management.",
+    "hero_badge": "A legacy of excellence since 2002",
+    "about": "We combine strong fundamentals with a future-focused curriculum, ensuring students learn by doing, lead by example, and become resilient professionals who can thrive in a rapidly evolving world.",
+    "address": "Doddaballapur Main Road, Yelahanka, Bengaluru, Karnataka 560064",
+    "phone": "+91 80 2297 1028",
+    "email": "admissions@bmsit.in"
+  },
+  "stats": [
+    { "value": "28+", "label": "Years of academic excellence" },
+    { "value": "9,000+", "label": "Students and alumni network" },
+    { "value": "95%", "label": "Placement success" }
+  ],
+  "programs": [
+    { "type": "UG Programs", "title": "B.E. in Computer Science", "description": "Cutting-edge software engineering, AI, data systems, and cloud technology." },
+    { "type": "UG Programs", "title": "B.E. in Electronics & Communication", "description": "Embedded systems, signal processing, robotics, and next-gen communication." },
+    { "type": "UG Programs", "title": "B.E. in Mechanical Engineering", "description": "Design thinking, smart manufacturing, and sustainable innovation." },
+    { "type": "PG Programs", "title": "M.Tech / MBA", "description": "Advanced specializations with leadership training and applied research." }
+  ],
+  "highlights": [
+    { "title": "Industry-integrated learning", "text": "Live projects, internships, and expert mentorship." },
+    { "title": "Global perspective", "text": "International exposure, exchange opportunities, and cultural diversity." },
+    { "title": "Career-focused outcomes", "text": "Strong placement assistance, entrepreneurship support, and alumni guidance." }
+  ],
+  "news": [
+    { "category": "Innovation", "title": "BMSIT&M students showcase award-winning prototype at national tech forum.", "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" },
+    { "category": "Campus", "title": "Annual cultural festival brings together innovation, creativity, and community.", "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" },
+    { "category": "Career", "title": "Industry leaders mentor students through internship pathways and placement prep.", "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" }
+  ],
+  "campus_points": [
+    "State-of-the-art labs and digital classrooms",
+    "Student entrepreneurship and innovation center",
+    "Sports, clubs, cultural initiatives, and leadership platforms",
+    "Strong faculty mentorship and student support systems"
+  ],
+  "metrics": [
+    { "value": "95%", "label": "Placement assistance and internship success" },
+    { "value": "100+", "label": "Research publications and innovation projects" },
+    { "value": "50+", "label": "Student clubs and technical communities" },
+    { "value": "24/7", "label": "Campus support for student well-being and mentoring" }
+  ],
+  "admissions": {
+    "title": "Start your next chapter with a community that supports your ambition.",
+    "cta": "Apply for admission"
+  }
+}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact | {{ site_data.college.name }}{% endblock %}
+
+{% block content %}
+<section class="page-hero narrow-hero">
+  <div class="container page-hero-content">
+    <p class="eyebrow dark">Contact</p>
+    <h1>We are here to help you take the next step.</h1>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container split-layout contact-grid">
+    <div class="info-panel">
+      <h3>Campus details</h3>
+      <p><strong>Address:</strong> {{ site_data.college.address }}</p>
+      <p><strong>Phone:</strong> <a href="tel:{{ site_data.college.phone }}">{{ site_data.college.phone }}</a></p>
+      <p><strong>Email:</strong> <a href="mailto:{{ site_data.college.email }}">{{ site_data.college.email }}</a></p>
+    </div>
+    <div>
+      <form class="contact-form">
+        <label>
+          Full name
+          <input type="text" placeholder="Your name" />
+        </label>
+        <label>
+          Email address
+          <input type="email" placeholder="Your email" />
+        </label>
+        <label>
+          Message
+          <textarea rows="5" placeholder="How can we help?"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}
